@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>886</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>886</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="mainGB">
+      <property name="minimumSize">
+       <size>
+        <width>868</width>
+        <height>466</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>10000</width>
+        <height>10000</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(210, 236, 255);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="categoriasSW">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="inicioPage">
+          <widget class="QGroupBox" name="inicarSesionGB">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>50</y>
+             <width>221</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="title">
+            <string>Iniciar Sesión</string>
+           </property>
+           <widget class="QLineEdit" name="correoLE">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhEmailCharactersOnly</set>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="passwordLE">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="correoLB">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>30</y>
+              <width>47</width>
+              <height>13</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Correo</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="passwordLB">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>80</y>
+              <width>81</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Contraseña</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="inicarSesionPB">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>120</y>
+              <width>111</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);
+font: 10pt &quot;MV Boli&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Iniciar Sesión</string>
+            </property>
+            <property name="icon">
+             <iconset resource="Imagenes/Imagenes.qrc">
+              <normaloff>:/5.png</normaloff>
+              <selectedoff>:/5.png</selectedoff>:/5.png</iconset>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="registrarseGB">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>230</y>
+             <width>291</width>
+             <height>191</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="title">
+            <string>Registrarse </string>
+           </property>
+           <widget class="QLineEdit" name="usuarioLE">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="correoNuevoLE">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>70</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhEmailCharactersOnly</set>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="passwordNuevoLE">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>110</y>
+              <width>113</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="usuarioLB">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>30</y>
+              <width>131</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Nombre de Usuario</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="correoNuevoLB">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>70</y>
+              <width>131</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Correo del Usuario</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="passwordNuevoLB">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>110</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Contraseña</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="registrarsePB">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>150</y>
+              <width>111</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(210, 236, 255);
+font: 10pt &quot;MV Boli&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Registrarse</string>
+            </property>
+            <property name="icon">
+             <iconset resource="Imagenes/Imagenes.qrc">
+              <normaloff>:/4.png</normaloff>:/4.png</iconset>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="logoP1_LB">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>70</y>
+             <width>371</width>
+             <height>311</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="Imagenes/Imagenes.qrc">:/LOGUITO.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="buscadorPage">
+          <widget class="QLabel" name="logoP2_LB">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>10</y>
+             <width>261</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="Imagenes/Imagenes.qrc">:/LOGO.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="barraBuscarLE">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>150</y>
+             <width>721</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buscarPB">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>190</y>
+             <width>111</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+           <property name="icon">
+            <iconset resource="Imagenes/Imagenes.qrc">
+             <normaloff>:/lupa.png</normaloff>:/lupa.png</iconset>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="filtroCategoriasGB">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>220</y>
+             <width>361</width>
+             <height>191</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Categorías</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="categoriaSA">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>321</width>
+                 <height>284</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QPushButton" name="artePB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Arte y cultura</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="economiaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Economia</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="historiaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Historia</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="culturaFisicaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Cultura fisica</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="medicinaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Medicina</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="matematicasPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Matematicas</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="geografiaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Geografia</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cienciaPB">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>Ciencia y tecnologia</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="cerrarSesionPB">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>450</y>
+             <width>80</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Cerrar Sesion</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="categoriaPage">
+          <widget class="QLabel" name="logoP3_LB">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>0</y>
+             <width>201</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="Imagenes/Imagenes.qrc">:/LOGUITO.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="seleCategoriaCB">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>50</y>
+             <width>461</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Todo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Arte y cultura</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Economia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Historia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cultura fisica</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Medicina</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Matematicas</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Geografia</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ciencia y tecnologia</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="categoriaLB">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>20</y>
+             <width>181</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(210, 236, 255);
+font: 11pt &quot;Forte&quot;;</string>
+           </property>
+           <property name="text">
+            <string> CAMBIAR CATEGORÍA: </string>
+           </property>
+          </widget>
+          <widget class="QScrollArea" name="notasFiltroSA">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>821</width>
+             <height>291</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>819</width>
+              <height>289</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QGridLayout" name="notasFiltroGL"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="regresarCatPB">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>80</y>
+             <width>80</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Regresar</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="notaPage">
+          <widget class="QLabel" name="logoP4_LB">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>10</y>
+             <width>271</width>
+             <height>191</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="Imagenes/Imagenes.qrc">:/LOGUITO.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="tituloLB">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>20</y>
+             <width>491</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>TÍTULO</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="evaluacionGB">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>210</y>
+             <width>281</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="1" column="1">
+             <widget class="QLabel" name="prestigioLB">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Prestigio de la Institución</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QSpinBox" name="antiguedadSB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QCheckBox" name="confirmarCheck">
+              <property name="text">
+               <string>Confirmar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QSpinBox" name="prestigioSB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="evaluacionLB">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Evaluación</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QSpinBox" name="renombreSB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="enviarPB">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;MV Boli&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Enviar</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Imagenes/Imagenes.qrc">
+                <normaloff>:/0c4ffaf979a8c05a9e7b15293996340f.png</normaloff>:/0c4ffaf979a8c05a9e7b15293996340f.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="renombreLB">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Renombre del Autor</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QLabel" name="antiguedadLB">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Antiguedad</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QSpinBox" name="calidadSB">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="calidadLB">
+              <property name="styleSheet">
+               <string notr="true">font: 11pt &quot;Forte&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Calidad del Contenido</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QLabel" name="calificacionLB">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>370</y>
+             <width>141</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Forte</family>
+             <pointsize>18</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="text">
+            <string>Calificación:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="porcentajeLB">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>370</y>
+             <width>111</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Forte</family>
+             <pointsize>18</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="descripcionLB">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>60</y>
+             <width>521</width>
+             <height>281</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>435</width>
+             <height>160</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Descripción:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignJustify|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="regresarPB">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>430</y>
+             <width>80</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Regresar</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes/Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

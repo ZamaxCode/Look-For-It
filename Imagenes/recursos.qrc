@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>LOGO.png</file>
+        <file>4.png</file>
+        <file>5.png</file>
+        <file>LOGO - copia.png</file>
+        <file>lupa.png</file>
+        <file>0c4ffaf979a8c05a9e7b15293996340f.png</file>
+        <file>icono.png</file>
+        <file>LOGUITO.png</file>
+    </qresource>
+</RCC>
